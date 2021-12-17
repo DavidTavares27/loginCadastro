@@ -5,11 +5,11 @@ const cors = require("cors");
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
 
-const db = mysql.createPool({
+const db = mysql.createConnection({
   host: "localhost",
-  user: "root",
+  user: "david",
   password: "password",
-  database: "banco",
+  database: "caduser",
 });
 
 app.use(express.json());
